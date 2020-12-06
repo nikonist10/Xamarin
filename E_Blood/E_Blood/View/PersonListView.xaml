@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:E_Blood.ViewModel"
+             mc:Ignorable="d"
+             x:Class="E_Blood.View.PersonListView">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="logout.png" Priority="0" Order="Primary" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar x:Name="Search" Placeholder="Search by BloodType" HorizontalTextAlignment="Center" 
+                       TextChanged="Search_TextChanged"></SearchBar>
+            <ListView x:Name="PersonView"  ItemsSource="{Binding Persons}" HasUnevenRows="True" ItemTapped="PersonView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                       
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Grid BackgroundColor="#C70039" Padding="10" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" HorizontalOptions="Center">
+                                    <Label Text="{ Binding BloodType}" TextColor="White" FontSize="27"/>
+                       
+                            </Grid>
+                                <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                                    <Label Grid.Column="1" Text="{ Binding Name}"    TextColor="Black" FontSize="18" />
+                                    <Label Grid.Column="2" Text="{ Binding Email}" TextColor="Gray" FontSize="15"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                            
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

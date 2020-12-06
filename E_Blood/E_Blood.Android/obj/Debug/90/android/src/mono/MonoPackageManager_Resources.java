@@ -3,8 +3,12 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "E_Blood.Android.dll" comes first in this list. */
 		"E_Blood.Android.dll",
+		"Elasticsearch.Net.dll",
 		"E_Blood.dll",
 		"FormsViewGroup.dll",
+		"MvvmHelpers.dll",
+		"Nest.dll",
+		"System.Diagnostics.DiagnosticSource.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

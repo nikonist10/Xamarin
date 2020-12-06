@@ -6,6 +6,10 @@
              mc:Ignorable="d"
              x:Class="E_Blood.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="BillabongFont">
+                <On Platform="Android" Value="Billabong.ttf#Billabong" />
+            </OnPlatform>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

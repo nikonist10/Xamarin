@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\asus\\source\\repos\\E_Blood\\E_Blood\\E_Blood.UWP\\E_Blood.UWP.csproj": {}
+    "C:\\Users\\asus\\Desktop\\E_Blood\\E_Blood\\E_Blood.UWP\\E_Blood.UWP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\asus\\source\\repos\\E_Blood\\E_Blood\\E_Blood.UWP\\E_Blood.UWP.csproj": {
+    "C:\\Users\\asus\\Desktop\\E_Blood\\E_Blood\\E_Blood.UWP\\E_Blood.UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asus\\source\\repos\\E_Blood\\E_Blood\\E_Blood.UWP\\E_Blood.UWP.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\Desktop\\E_Blood\\E_Blood\\E_Blood.UWP\\E_Blood.UWP.csproj",
         "projectName": "E_Blood.UWP",
-        "projectPath": "C:\\Users\\asus\\source\\repos\\E_Blood\\E_Blood\\E_Blood.UWP\\E_Blood.UWP.csproj",
+        "projectPath": "C:\\Users\\asus\\Desktop\\E_Blood\\E_Blood\\E_Blood.UWP\\E_Blood.UWP.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asus\\source\\repos\\E_Blood\\E_Blood\\E_Blood.UWP\\obj\\",
+        "outputPath": "C:\\Users\\asus\\Desktop\\E_Blood\\E_Blood\\E_Blood.UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "uap10.0.16299": {
             "projectReferences": {
-              "C:\\Users\\asus\\source\\repos\\E_Blood\\E_Blood\\E_Blood\\E_Blood.csproj": {
-                "projectPath": "C:\\Users\\asus\\source\\repos\\E_Blood\\E_Blood\\E_Blood\\E_Blood.csproj"
+              "C:\\Users\\asus\\Desktop\\E_Blood\\E_Blood\\E_Blood\\E_Blood.csproj": {
+                "projectPath": "C:\\Users\\asus\\Desktop\\E_Blood\\E_Blood\\E_Blood\\E_Blood.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\asus\\source\\repos\\E_Blood\\E_Blood\\E_Blood\\E_Blood.csproj": {
+    "C:\\Users\\asus\\Desktop\\E_Blood\\E_Blood\\E_Blood\\E_Blood.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asus\\source\\repos\\E_Blood\\E_Blood\\E_Blood\\E_Blood.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\Desktop\\E_Blood\\E_Blood\\E_Blood\\E_Blood.csproj",
         "projectName": "E_Blood",
-        "projectPath": "C:\\Users\\asus\\source\\repos\\E_Blood\\E_Blood\\E_Blood\\E_Blood.csproj",
+        "projectPath": "C:\\Users\\asus\\Desktop\\E_Blood\\E_Blood\\E_Blood\\E_Blood.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asus\\source\\repos\\E_Blood\\E_Blood\\E_Blood\\obj\\",
+        "outputPath": "C:\\Users\\asus\\Desktop\\E_Blood\\E_Blood\\E_Blood\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -123,11 +123,19 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "NEST": {
+              "target": "Package",
+              "version": "[7.10.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Refractored.MvvmHelpers": {
+              "target": "Package",
+              "version": "[1.6.2, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

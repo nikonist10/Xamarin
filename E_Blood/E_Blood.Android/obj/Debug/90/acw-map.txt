@@ -1,3 +1,6 @@
+E_Blood.Droid.CustomEntryRenderer, E_Blood.Android;crc648f3ff1e15f839e76.CustomEntryRenderer
+E_Blood.Droid.CustomEntryRenderer;crc648f3ff1e15f839e76.CustomEntryRenderer
+e_blood.droid.CustomEntryRenderer;crc648f3ff1e15f839e76.CustomEntryRenderer
 E_Blood.Droid.MainActivity, E_Blood.Android;crc648f3ff1e15f839e76.MainActivity
 E_Blood.Droid.MainActivity;crc648f3ff1e15f839e76.MainActivity
 e_blood.droid.MainActivity;crc648f3ff1e15f839e76.MainActivity

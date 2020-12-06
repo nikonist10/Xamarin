@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:custom="clr-namespace:E_Blood"
+             xmlns:local="clr-namespace:E_Blood.ViewModel"
+             mc:Ignorable="d"
+             x:Class="E_Blood.View.SignUpPage">
+    <ContentPage.BindingContext>
+        <local:SignUpViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+      <StackLayout>
+            <custom:CustomEntry x:Name ="Name"  Margin="0, 60 , 0, 0"
+             Placeholder = "Name" Text="{Binding Person.Name}" 
+             HorizontalTextAlignment="Center"
+            FontSize="15" HeightRequest="50"    PlaceholderColor="Gray" TextColor="Black"
+             HorizontalOptions ="Center" WidthRequest="320"  />
+
+            <custom:CustomEntry x:Name ="Email" 
+             Placeholder = "Email" Text="{Binding Person.Email}" 
+             Keyboard ="Email"  HorizontalTextAlignment="Center"
+               FontSize="15" HeightRequest="50"    PlaceholderColor="Gray" TextColor="Black"
+             HorizontalOptions ="Center" WidthRequest="320"   ></custom:CustomEntry>
+
+            <custom:CustomEntry x:Name = "Password" Placeholder = "Password" Text="{Binding Person.Password}"
+             IsPassword="True" CornerRadius="8" HorizontalTextAlignment="Center"
+             BorderColor="Black"  FontSize="15" HeightRequest="50"    PlaceholderColor="Gray" TextColor="Black"
+             HorizontalOptions ="Center" WidthRequest="320"     />
+
+            <custom:CustomEntry x:Name ="Number" CornerRadius="8"  
+             Placeholder = "Phone Number" Text="{Binding Person.Number}" 
+             Keyboard ="Numeric" IsCurvedCornersEnabled="True" HorizontalTextAlignment="Center"
+             BorderColor="Black"  FontSize="15" HeightRequest="50"    PlaceholderColor="Gray" TextColor="Black"
+             HorizontalOptions ="Center" WidthRequest="320"     />
+
+            <custom:CustomEntry x:Name ="City" CornerRadius="8"  
+             Placeholder = "City" Text="{Binding Person.City}" 
+             IsCurvedCornersEnabled="True" HorizontalTextAlignment="Center"
+             BorderColor="Black"  FontSize="15" HeightRequest="50"    PlaceholderColor="Gray" TextColor="Black"
+             HorizontalOptions ="Center" WidthRequest="320"     />
+
+            <Picker x:Name="BTypePicker" SelectedIndexChanged="BTypePicker_SelectedIndexChanged" Title="Blood Type"
+               SelectedItem="{Binding Person.BloodType}" VerticalOptions="Center"  />
+
+
+
+            <Button Text = "Add Donor "  CornerRadius="8" BorderColor="#C70039" HorizontalOptions="Center"
+                    FontAttributes = "Bold"  Clicked="Button_clicked" 
+                    BackgroundColor = "#C70039" WidthRequest="320" HeightRequest="52" TextColor="White" />
+        </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
